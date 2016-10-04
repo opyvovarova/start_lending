@@ -3,7 +3,11 @@
   position: relative;
   width: 100%;
   float: left;
-  background-color: #fff;
+  background-color: transparent;
+  background-image: url("../img/head-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   &__logo{
     display: block;
     position: relative;
@@ -37,6 +41,7 @@
       float: left;
       margin: 0;
       list-style: none;
+      margin-top: 70px;
       li{
         flex: 1 0 0;
         position: relative;
@@ -48,6 +53,13 @@
           float: left;
           padding: 20px 10px;
           text-align: center;
+          color: #1a3c68;
+          font-family: $gilroyextrabold;
+          font-size: 18px;
+          @include transition(0.4s);
+          &:hover{
+            color: #ca2536;
+          }
         }
       }
     }
@@ -58,17 +70,32 @@
     width: 234px;
     float: left;
     text-align: center;
+    margin-top: 28px;
     &--tel{
       display: block;
       position: relative;
       width: 100%;
       float: left;
+      color: white;
+      font-family: $gilroylight;
+      font-size: 24px;
     }
     &--call{
       display: block;
       position: relative;
       width: 100%;
       float: left;
+      border: 3px solid white;
+      padding: 15px 30px;
+      color: white;
+      font-family: $gilroyextrabold;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      &:hover{
+        border: 3px solid #ca2536;
+        color: #ca2536;
+      }
     }
   }
 }
