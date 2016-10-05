@@ -3772,13 +3772,15 @@ p{
   background-image: url("../img/services-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  /*overflow: hidden;*/ }
   .services__title {
     display: block;
     position: relative;
     width: 30%;
     margin: 0px auto;
     margin-top: 100px;
+    margin-bottom: 60px;
     text-align: center;
     color: #ca2536;
     font-family: "Gilroy Light";
@@ -3786,6 +3788,72 @@ p{
     text-transform: uppercase;
     padding: 20px;
     border: 1px solid #ca2536; }
+    .services__title--before {
+      display: block;
+      position: absolute;
+      width: 56.66%;
+      height: 200px;
+      left: 159px;
+      top: -25px;
+      background-image: url("../img/services-bg-before.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain; }
+    .services__title--after {
+      display: block;
+      position: absolute;
+      right: -247px;
+      top: 123px;
+      width: 56.66%;
+      height: 85px;
+      background-image: url("../img/services-bg-after.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain; }
+  .services
+  .services__box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    float: left; }
+    .services
+    .services__box--item {
+      flex: 1 0 0;
+      position: relative;
+      float: left;
+      text-align: center; }
+      .services
+      .services__box--item p {
+        position: relative;
+        width: 100%;
+        color: #3c8bf2;
+        font-family: "Gilroy Extra Bold";
+        font-size: 20px;
+        line-height: 28px; }
+    .services
+    .services__box--img {
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left; }
+  .services .brand__box--order {
+    display: inline-block;
+    position: relative;
+    float: none;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 15px 30px;
+    border: 4px solid #3c8af1;
+    text-transform: uppercase;
+    color: #3c8bf2;
+    font-family: "Gilroy Extra Bold";
+    font-size: 20px; }
+    .services .brand__box--order:hover {
+      border: 4px solid #ca2536;
+      color: #ca2536; }
 
 .footer {
   display: block;
