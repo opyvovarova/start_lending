@@ -1,17 +1,15 @@
 $(document).ready(function(){
 
-    /*top-slider*/
-    var top = $('.top-slider__box');
-
-    top.owlCarousel({
-        /*animateOut: 'fadeOut',
-        animateIn: 'fadeIn',*/
+    /*top-slider*/   
+    $('.top-slider__box').owlCarousel({
+        animateOut: 'flipOutX',
+        animateIn: 'flipInX',
         loop: true,
         margin: 0,
         stagePadding: 0,
         smartSpeed: 450,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         responsive: {
             0: {
                 items: 1
