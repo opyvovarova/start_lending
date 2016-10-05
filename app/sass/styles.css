@@ -3703,6 +3703,56 @@ p{
         border: 4px solid #ca2536;
         color: #ca2536; }
 
+.model {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #3c8bf2;
+  background-image: url("../img/model-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .model__title {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 65px;
+    color: white;
+    text-align: center;
+    font-family: "Gilroy Extra Bold";
+    font-size: 78px;
+    letter-spacing: 31px; }
+  .model__tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fff;
+    margin: 0px auto; }
+    .model__tg td {
+      font-family: "Gilroy Extra Bold";
+      border: 1px solid #e1edfc;
+      overflow: hidden;
+      word-break: normal; }
+    .model__tg th {
+      font-family: "Gilroy Extra Bold";
+      padding: 10px 5px;
+      border: 1px solid #e1edfc;
+      overflow: hidden;
+      word-break: normal; }
+    .model__tg th.model__tg--title {
+      color: #3c8bf2;
+      font-size: 56px;
+      text-align: center;
+      vertical-align: top; }
+    .model__tg th.model__tg--subtitle {
+      color: #3c8bf2;
+      font-family: "Gilroy Light";
+      font-size: 45px;
+      text-align: center;
+      vertical-align: top; }
+
 .footer {
   display: block;
   position: relative;
