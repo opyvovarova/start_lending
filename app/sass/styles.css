@@ -3855,11 +3855,105 @@ p{
       border: 4px solid #ca2536;
       color: #ca2536; }
 
+.svc {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #d95865;
+  background-image: url("../img/svc-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 23px 0; }
+  .svc__box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin: 150px 0px; }
+    .svc__box--left {
+      flex: 1;
+      position: relative;
+      float: left; }
+    .svc__box--right {
+      flex: 1;
+      position: relative;
+      float: left; }
+    .svc__box--img {
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left; }
+      .svc__box--img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .svc__title {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-family: "Gilroy Extra Bold";
+    font-size: 70px;
+    line-height: 73px; }
+  .svc__subtitle {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 40px 0px;
+    text-align: left;
+    color: white;
+    font-family: "Gilroy Light";
+    font-size: 20px; }
+  .svc__list {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    list-style-type: disc; }
+    .svc__list li {
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      color: white;
+      font-family: "Gilroy Light";
+      font-size: 18px;
+      line-height: 30px; }
+    .svc__list li:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 3px;
+      left: -10px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #fff;
+      margin-top: 15px; }
+
 .footer {
   display: block;
   position: relative;
   width: 100%;
   float: left; }
+
+#Go_Top {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 10;
+  display: none; }
 
 @media only screen and (max-width: 1930px) {
   .header {
