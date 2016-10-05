@@ -1,0 +1,25 @@
+.services{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  background-image: url("../img/services-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__title{
+    display: block;
+    position: relative;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+    color: #ca2536;
+    font-family: $gilroylight;
+    font-size: 76px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #ca2536;
+  }
+}

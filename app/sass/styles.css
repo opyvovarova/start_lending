@@ -3711,15 +3711,15 @@ p{
   background-color: #3c8bf2;
   background-image: url("../img/model-bg.png");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover; }
+  -webkit-background-size: contain;
+  background-size: contain; }
   .model__title {
     display: block;
     position: relative;
     width: 100%;
     float: left;
     margin-top: 100px;
-    margin-bottom: 65px;
+    margin-bottom: 39px;
     color: white;
     text-align: center;
     font-family: "Gilroy Extra Bold";
@@ -3729,7 +3729,8 @@ p{
     border-collapse: collapse;
     border-spacing: 0;
     background-color: #fff;
-    margin: 0px auto; }
+    margin: 0px auto;
+    margin-bottom: 100px; }
     .model__tg td {
       font-family: "Gilroy Extra Bold";
       border: 1px solid #e1edfc;
@@ -3752,6 +3753,39 @@ p{
       font-size: 45px;
       text-align: center;
       vertical-align: top; }
+    .model__tg td.model__tg--name {
+      color: #3c8bf2;
+      font-family: "Gilroy Extra Bold";
+      font-size: 18px;
+      text-align: center;
+      vertical-align: top;
+      padding: 30px 0px; }
+    .model__tg tr.colored {
+      background-color: #ebf2fc; }
+
+.services {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  background-image: url("../img/services-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .services__title {
+    display: block;
+    position: relative;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+    color: #ca2536;
+    font-family: "Gilroy Light";
+    font-size: 76px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #ca2536; }
 
 .footer {
   display: block;
@@ -3789,5 +3823,15 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -148px 0px; } }
+@media only screen and (max-width: 770px) {
+  .model__tg {
+    width: auto !important; }
+
+  .model__tg col {
+    width: auto !important; }
+
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
 
 /*# sourceMappingURL=styles.css.map */
