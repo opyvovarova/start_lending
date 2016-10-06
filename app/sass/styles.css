@@ -2683,10 +2683,7 @@ p{
     position: absolute;
     width: 49%;
     left: 0;
-    height: 56px;
-    /*border-right: 1px solid red;*/
-    /*border-bottom: 1px solid red;*/
-    /*transition: height 1s ease-in-out;*/ }
+    height: 56px; }
     .services__animation1--vertical {
       display: block;
       position: absolute;
@@ -2694,15 +2691,14 @@ p{
       height: 0%;
       right: 0;
       background-color: red;
-      transition: height 2s; }
+      transition: height 3s; }
   .services__animation2 {
     position: absolute;
     left: 0;
     top: 55px;
     display: block;
     width: 49%;
-    height: 111px;
-    /*transition: height 1s ease-in-out;*/ }
+    height: 111px; }
     .services__animation2--horizontal {
       display: block;
       position: absolute;
@@ -2711,7 +2707,7 @@ p{
       left: 100%;
       top: 0;
       background-color: red;
-      transition: left 2s, width 2s; }
+      transition: left 3s, width 3s; }
     .services__animation2--horizontal2 {
       display: block;
       position: absolute;
@@ -2720,7 +2716,7 @@ p{
       left: 0;
       bottom: 0;
       background-color: red;
-      transition: width 2s; }
+      transition: width 3s; }
     .services__animation2--vertical {
       display: block;
       position: relative;
@@ -2729,15 +2725,14 @@ p{
       background-color: red;
       left: 0;
       top: 0;
-      transition: height 2s; }
+      transition: height 3s; }
   .services__animation3 {
     position: absolute;
     right: -247px;
     top: 55px;
     display: block;
     width: 57%;
-    height: 111px;
-    /*border-bottom: 1px solid red;*/ }
+    height: 111px; }
     .services__animation3--horizontal {
       display: block;
       position: absolute;
@@ -2746,16 +2741,32 @@ p{
       width: 0;
       height: 1px;
       background-color: red;
-      transition: width 2s; }
+      transition: width 3s; }
   .services__animation4 {
     display: block;
     position: absolute;
     width: 7%;
     height: 87%;
     bottom: 0;
-    left: -248px;
-    border-top: 1px solid #3c8af1;
-    border-right: 1px solid #3c8af1; }
+    left: -248px; }
+    .services__animation4--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s; }
+    .services__animation4--vertical {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 3s; }
   .services__animation5 {
     position: absolute;
     bottom: 0;
@@ -2763,9 +2774,25 @@ p{
     display: block;
     width: 24.66%;
     height: 8%;
-    border-top: 1px solid #3c8af1;
-    border-left: 1px solid white;
-    border-right: 1px solid #3c8af1; }
+    border-left: 1px solid white; }
+    .services__animation5--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s; }
+    .services__animation5--vertical {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 2s; }
   .services__title {
     display: block;
     position: relative;

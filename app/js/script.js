@@ -54,9 +54,10 @@ $(document).ready(function () {
             $('.services__animation2--vertical').css({height:"100%"});
             $('.services__animation2--horizontal2').css({width:"100%"});
             $('.services__animation3--horizontal').css({width:"100%"});
-            /*$('.contacts__box--call').css({visibility:"visible"});//добавляется видимость
-            $('.contacts__box--address').addClass('animated fadeInLeft');//добавляются классы для анимации
-            $('.contacts__box--call').addClass('animated fadeInRight');//добавляются классы для анимации*/
+            $('.services__animation4--horizontal').css({width:"100%"});
+            $('.services__animation4--vertical').css({height:"100%"});
+            $('.services__animation5--horizontal').css({width:"100%"});
+            $('.services__animation5--vertical').css({height:"100%"});
         }
         if ( ($(this).scrollTop() + windowHeight) >= $('.contacts__box').offset().top) {//до начала блока с классом contacts__box
             $('.contacts__box--address').css({visibility:"visible"});//добавляется видимость
