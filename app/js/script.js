@@ -35,6 +35,27 @@ $(document).ready(function () {
     });
     /*close top-slider*/
 
+    /*services animation*/
+    var windowHeight = $(window).height();//переменная для определения высоты окна    
+    var elements = $('.services__box--item');
+
+    $(window).scroll(function () {//при прокрутке окна
+
+        if ( ($(this).scrollTop() + windowHeight) >= elements.offset().top) {//до начала блока с классом advantages
+
+            elements.each(function(i) {//функция задержки появления каждого элемента
+                $(this).delay((i++) * 500).fadeTo(1000, 1);
+            }); 
+        }
+        if ( ($(this).scrollTop() + windowHeight) >= $('.contacts__box').offset().top) {//до начала блока с классом contacts__box
+            $('.contacts__box--address').css({visibility:"visible"});//добавляется видимость
+            $('.contacts__box--call').css({visibility:"visible"});//добавляется видимость
+            $('.contacts__box--address').addClass('animated fadeInLeft');//добавляются классы для анимации
+            $('.contacts__box--call').addClass('animated fadeInRight');//добавляются классы для анимации
+        }        
+    });
+    /*close services animation*/
+    
     /*go up arrow*/
     $(window).scroll(function () {
         var scrollDiv = $('#Go_Top');
