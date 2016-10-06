@@ -3861,11 +3861,19 @@ p{
   width: 100%;
   float: left;
   background-color: #d95865;
-  background-image: url("../img/svc-bg.png");
+  /*background-image: url("../img/svc-bg.png");*/
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 23px 0; }
+  .svc .square {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 356px;
+    width: 22px;
+    height: 15px;
+    background-color: #fff; }
   .svc__box {
     display: flex;
     flex-wrap: wrap;
@@ -3940,6 +3948,86 @@ p{
       overflow: hidden;
       background-color: #fff;
       margin-top: 15px; }
+
+.contacts {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  background-image: url("../img/contacts-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 -66px; }
+  .contacts .square {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 186px;
+    width: 22px;
+    height: 15px;
+    background-color: #3b87ec; }
+  .contacts__title {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-top: 78px;
+    text-align: left;
+    color: #3c8af1;
+    font-family: "Gilroy Extra Bold";
+    font-size: 70px;
+    line-height: 73px; }
+  .contacts__subtitle {
+    display: block;
+    position: relative;
+    /*width: 100%;*/
+    float: left;
+    opacity: 0.3;
+    color: #3c8af1;
+    font-family: "Gilroy Light";
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 46px;
+    text-transform: uppercase; }
+  .contacts__box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    float: right;
+    position: relative;
+    margin-bottom: 160px; }
+    .contacts__box--address {
+      flex: 1;
+      position: relative;
+      color: #3c8af1;
+      font-family: "Gilroy Extra Bold";
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 22px;
+      border-bottom: 1px dashed #e7eff9; }
+      .contacts__box--address img {
+        position: absolute;
+        left: 0;
+        top: 9px; }
+    .contacts__box--call {
+      flex: 1;
+      position: relative;
+      text-align: right;
+      color: #3c8af1;
+      font-family: "Gilroy Extra Bold";
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 22px;
+      padding-top: 8px;
+      border-bottom: 1px dashed #e7eff9; }
+      .contacts__box--call img {
+        position: absolute;
+        top: 7px;
+        right: 114px; }
 
 .footer {
   display: block;

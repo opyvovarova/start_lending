@@ -4,11 +4,20 @@
   width: 100%;
   float: left;
   background-color: #d95865;
-  background-image: url("../img/svc-bg.png");
+  /*background-image: url("../img/svc-bg.png");*/
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 23px 0;
+  .square{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 356px;
+    width: 22px;
+    height: 15px;
+    background-color: #fff;
+  }
   &__box{
     display: flex;
     flex-wrap: wrap;

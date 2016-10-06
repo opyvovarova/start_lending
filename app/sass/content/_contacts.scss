@@ -1,0 +1,88 @@
+.contacts{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  background-image: url("../img/contacts-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 -66px;
+  .square{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 186px;
+    width: 22px;
+    height: 15px;
+    background-color: #3b87ec;
+  }
+  &__title{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-top: 78px;
+    text-align: left;
+    color: #3c8af1;
+    font-family: $gilroyextrabold;
+    font-size: 70px;
+    line-height: 73px;
+  }
+  &__subtitle{
+    display: block;
+    position: relative;
+    /*width: 100%;*/
+    float: left;
+    opacity: 0.3;
+    color: #3c8af1;
+    font-family: $gilroylight;
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    float: right;
+    position: relative;
+    margin-bottom: 160px;
+    &--address{
+      flex: 1;
+      position: relative;
+      color: #3c8af1;
+      font-family: $gilroyextrabold;
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 22px;
+      border-bottom: 1px dashed #e7eff9;
+      img{
+        position: absolute;
+        left: 0;
+        top: 9px;
+      }
+    }
+    &--call{
+      flex: 1;
+      position: relative;
+      text-align: right;
+      color: #3c8af1;
+      font-family: $gilroyextrabold;
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 22px;
+      padding-top: 8px;
+      border-bottom: 1px dashed #e7eff9;
+      img{
+        position: absolute;
+        top: 7px;
+        right: 114px;
+      }
+    }
+  }
+}
