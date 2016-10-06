@@ -18,6 +18,15 @@
     height: 15px;
     background-color: #3b87ec;
   }
+  .square-bottom{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50.66%;
+    width: 22px;
+    height: 15px;
+    background-color: #3c8af1;
+  }
   &__title{
     display: block;
     position: relative;
@@ -78,6 +87,9 @@
       padding-left: 22px;
       padding-top: 8px;
       border-bottom: 1px dashed #e7eff9;
+      &:hover{
+        color: #3c8af1;
+      }
       img{
         position: absolute;
         top: 7px;

@@ -13,14 +13,14 @@ $(document).ready(function () {
 
     /*top-slider*/
     $('.top-slider__box').owlCarousel({
-        animateOut: 'flipOutX',
-        animateIn: 'flipInX',
+       /* animateOut: 'flipOutX',
+        animateIn: 'flipInX',*/
         loop: true,
         margin: 0,
         stagePadding: 0,
         smartSpeed: 450,
         nav: false,
-        autoplay: true,
+        autoplay: false,
         responsive: {
             0: {
                 items: 1
@@ -53,6 +53,39 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 0}, "slow");
         return false;
     });
-    /*----- close-----*/
+    /*close go up arrow*/
+
+    /*footer map*/
+    if ($('#footerMap').length > 0) {//проверяет наличие блока на странице
+
+        ymaps.ready(function () {
+
+            var myMap = new ymaps.Map('footerMap', {
+                // При инициализации карты, обязательно нужно указать
+                // ее центр и коэффициент масштабирования
+                center: [55.548726, 37.74242],
+                zoom: 17
+            });
+            // Создание метки
+            var myPlacemark = new ymaps.Placemark(
+                // Координаты метки
+                [55.548726, 37.74242] , {
+                    // Свойства
+                    // Текст метки
+                    // iconContent: 'Центр детского творчества'
+                }, {
+                    // Опции
+                    // Иконка метки будет растягиваться под ее контент
+                    // preset: 'twirl#blueStretchyIcon'
+                    iconImageHref: 'img/icons/biglmarker-icon.png', // картинка иконки
+                    iconImageSize: [140, 118], // размеры картинки
+                    iconImageOffset: [9, -103] // смещение картинки
+                });
+            // Добавление метки на карту
+            myMap.geoObjects.add(myPlacemark);
+        });
+    };
+
+    /*close footer map*/
 
 });

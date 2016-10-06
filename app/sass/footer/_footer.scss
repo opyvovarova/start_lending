@@ -3,6 +3,49 @@
   position: relative;
   width: 100%;
   float: left;
+  /*z-index: 2;
+  background-color: red;*/
+  &__map{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 478px;
+    float: left;
+    overflow: hidden;
+    /*&--bg{
+      display: block;
+      width: 100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      background-image: url("../img/map-bg.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      z-index: 2;
+      transition: height 0.1s ease-in;
+      &:hover{
+        height: 0%;
+        z-index: 1;
+      }
+    }*/
+    #footerMap{
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      z-index: 1;
+      /*&:hover{
+        z-index: 2;
+      }*/
+    }
+  }
 }
 #Go_Top {
   position: fixed;
