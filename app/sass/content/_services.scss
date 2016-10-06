@@ -135,7 +135,7 @@
       top: 0;
       right: 0;
       background-color: #3c8af1;
-      transition: height 2s;
+      transition: height 3s;
     }
   }
   &__title{
@@ -179,18 +179,6 @@
       background-size: contain;
     }
   }
-  &/*__title:after{
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-image: url("../services-bg-after.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }*/
   &__box{
     display: flex;
     flex-wrap: wrap;
@@ -199,17 +187,12 @@
     min-height: 341px;
     position: relative;
     float: left;
-    /*.item1{
-      visibility: hidden;
-    }*/
     &--item{
       flex: 1 0 0;
       position: relative;
       float: left;
       text-align: center;
       opacity: 0;
-      //display: none;
-      /*visibility: hidden;*/
       p{
         position: relative;
         width: 100%;
