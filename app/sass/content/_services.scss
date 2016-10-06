@@ -13,9 +13,20 @@
     display: block;
     position: absolute;
     width: 49%;
+    left: 0;
     height: 56px;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red;
+    /*border-right: 1px solid red;*/
+    /*border-bottom: 1px solid red;*/
+    /*transition: height 1s ease-in-out;*/
+    &--vertical{
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0%;
+      right: 0;
+      background-color: red;
+      transition: height 2s;
+    }
   }
   &__animation2{
     position: absolute;
@@ -24,9 +35,40 @@
     display: block;
     width: 49%;
     height: 111px;
-    border-top: 1px solid red;
-    border-left: 1px solid red;
-    border-bottom: 1px solid red;
+    //border-top: 1px solid red;
+    //border-left: 1px solid red;
+    //border-bottom: 1px solid red;
+    /*transition: height 1s ease-in-out;*/
+    &--horizontal{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 100%;
+      top: 0;
+      background-color: red;
+      transition: left 2s, width 2s;
+    }
+    &--horizontal2{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: red;
+      transition:  width 2s;
+    }
+    &--vertical{
+      display: block;
+      position: relative;
+      width: 1px;
+      height: 0;
+      background-color: red;
+      left: 0;
+      top: 0;
+      transition: height 2s;
+    }
   }
   &__animation3{
     position: absolute;
@@ -35,7 +77,38 @@
     display: block;
     width: 57%;
     height: 111px;
-    border-bottom: 1px solid red;
+    /*border-bottom: 1px solid red;*/
+    &--horizontal{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: red;
+      transition: width 2s;
+    }
+  }
+  &__animation4{
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 87%;
+    bottom: 0;
+    left: -248px;
+    border-top: 1px solid #3c8af1;
+    border-right: 1px solid #3c8af1;
+  }
+  &__animation5{
+    position: absolute;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 24.66%;
+    height: 8%;
+    border-top: 1px solid #3c8af1;
+    border-left: 1px solid white;
+    border-right: 1px solid #3c8af1;
   }
   &__title{
     display: block;

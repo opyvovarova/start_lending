@@ -37,6 +37,7 @@ $(document).ready(function () {
 
     /*services animation*/
     var windowHeight = $(window).height();//переменная для определения высоты окна    
+
     var elements = $('.services__box--item');
 
     $(window).scroll(function () {//при прокрутке окна
@@ -47,12 +48,22 @@ $(document).ready(function () {
                 $(this).delay((i++) * 500).fadeTo(1000, 1);
             }); 
         }
+        if ( ($(this).scrollTop() + windowHeight) >= $('.services__animation1').offset().top) {//до начала блока с классом contacts__box
+            $('.services__animation1--vertical').css({height:"100%"});
+            $('.services__animation2--horizontal').css({width:"100%", left:"0"});
+            $('.services__animation2--vertical').css({height:"100%"});
+            $('.services__animation2--horizontal2').css({width:"100%"});
+            $('.services__animation3--horizontal').css({width:"100%"});
+            /*$('.contacts__box--call').css({visibility:"visible"});//добавляется видимость
+            $('.contacts__box--address').addClass('animated fadeInLeft');//добавляются классы для анимации
+            $('.contacts__box--call').addClass('animated fadeInRight');//добавляются классы для анимации*/
+        }
         if ( ($(this).scrollTop() + windowHeight) >= $('.contacts__box').offset().top) {//до начала блока с классом contacts__box
             $('.contacts__box--address').css({visibility:"visible"});//добавляется видимость
             $('.contacts__box--call').css({visibility:"visible"});//добавляется видимость
             $('.contacts__box--address').addClass('animated fadeInLeft');//добавляются классы для анимации
             $('.contacts__box--call').addClass('animated fadeInRight');//добавляются классы для анимации
-        }        
+        }
     });
     /*close services animation*/
     
@@ -106,7 +117,27 @@ $(document).ready(function () {
             myMap.geoObjects.add(myPlacemark);
         });
     };
-
     /*close footer map*/
 
+    /*modal*/
+    $('a.header__phone--call').click( function(event){ // лoвим клик пo ссылки с id="go"
+        event.preventDefault(); // выключaем стaндaртную рoль элементa
+        $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+            function(){ // пoсле выпoлнения предъидущей aнимaции
+                $('.modal__call')
+                    .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                    .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+            });
+    });
+    /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+    $('.modal__call--close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+        $('.modal__call')
+            .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+                function(){ // пoсле aнимaции
+                    $(this).css('display', 'none'); // делaем ему display: none;
+                    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                }
+            );
+    });
+    /*close modal*/
 });
