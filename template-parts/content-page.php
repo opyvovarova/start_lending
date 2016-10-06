@@ -10,6 +10,7 @@
 ?>
 
 <?php the_content(); ?>
+
 <!-- start brand.html-->
 <section class="brand">
 
@@ -214,11 +215,12 @@
 
 		<a name="services" id="go_services"></a>
 
-		<span class="services__title--before"></span>
+		<div class="services__animation1"></div>
+		<div class="services__animation2"></div>
 
 		<h3 class="services__title">Услуги</h3>
 
-		<span class="services__title--after"></span>
+		<div class="services__animation3"></div>
 
 		<div class="services__box">
 			<div class="services__box--item">
@@ -309,29 +311,14 @@
 					<li>поставка запасных частей для дизельных электростанций;</li>
 					<li>обучение технического персонала вашего предприятия.</li>
 				</ul>
-
 			</div>
-
 			<div class="svc__box--right">
-
-
 				<div class="svc__box--img">
-
 					<img src="<?php bloginfo('template_directory'); ?>/img/svc-img.png" alt="">
-
 				</div>
-
-
-
 			</div>
-
-
 		</div>
-
-
-
 	</div>
-
 </section>
 <!-- end svc.html-->
 
@@ -365,3 +352,4 @@
 	<span class="square-bottom"></span>
 
 </section>
+<!-- end contacts.html-->
