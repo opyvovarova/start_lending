@@ -338,12 +338,11 @@
 
             <span class="contacts__box--address">
                 <img src="<?php bloginfo('template_directory'); ?>/img/icons/smallmarker-icon.png" alt="">
-                Россия, Московская область, <br>
-                г.Видное, Белокаменное шосе, 10, вул.2 </span>
+	            <?php echo fw_get_db_customizer_option('address'); ?></span>
 
-			<a href="tel:+74954616230" class="contacts__box--call">
+			<a href="tel:<?php echo fw_get_db_customizer_option('phone'); ?>" class="contacts__box--call">
 				<img src="<?php bloginfo('template_directory'); ?>/img/icons/phone-icon.png" alt="">
-				+7(495)461-62-30</a>
+				<?php echo fw_get_db_customizer_option('phone'); ?></a>
 
 		</div>
 
