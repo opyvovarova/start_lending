@@ -4,6 +4,7 @@
   width: 100%;
   float: left;
   background-color: transparent;
+  margin-top: 70px;
   &__box {
     display: block;
     position: relative;
@@ -12,26 +13,20 @@
     &--item {
       position: relative;
       width: 100%;
-      height: calc(585px + 51px);
+      height: 688px;
       float: left;
       overflow: hidden;
-      /*margin-bottom: 51px;*/
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
     }
-   /* &--item:nth-of-type(3) {
-      .top-slider__box--title {
-        text-transform: capitalize!important;
-      }
-    }*/
     &--content {
       display: block;
       position: absolute;
       width: 100%;
-      top: 233px;
+      top: 263px;
       left: 0px;
     }
     &--title {
@@ -40,14 +35,13 @@
       width: 100%;
       margin-top: 43px;
       margin-bottom: 0;
-      //margin-left: -47px;
       float: left;
       text-transform: uppercase;
       text-align: center;
       color: white;
       font-family: $gilroyextrabold;
-      font-size: 173px;
-      text-shadow: 1px 1px 3px #000000;
+      font-size: 252px;
+      /*text-shadow: 1px 1px 3px #000000;*/
       span {
         text-transform: none;
       }
@@ -73,23 +67,23 @@
       font-family: $gilroylight;
       font-size: 36px;
       margin-bottom: -43px;
-      text-shadow: 1px 1px 3px #000000;
+      /*text-shadow: 1px 1px 3px #000000;*/
     }
     &--subtitle {
       display: block;
       position: relative;
       width: 50%;
-      padding: 15px 0px;
+      padding: 34px 0px;
       float: right;
       text-align: center;
       color: white;
       font-family: $gilroylight;
-      font-size: 28px;
+      font-size: 37px;
       border: 1px solid white;
       border-left: 1px solid transparent;
       margin-bottom: 0;
-      margin-top: -37px;
-      text-shadow: 1px 1px 3px #000000;
+      margin-top: -52px;
+      /*text-shadow: 1px 1px 3px #000000;*/
       span{
         display: block;
         position: relative;

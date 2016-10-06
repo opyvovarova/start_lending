@@ -4,11 +4,39 @@
   width: 100%;
   float: left;
   background-color: #fff;
-  background-image: url("../img/services-bg.png");
+  /*background-image: url("../img/services-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   /*overflow: hidden;*/
+  &__animation1{
+    display: block;
+    position: absolute;
+    width: 49%;
+    height: 56px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+  &__animation2{
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: block;
+    width: 49%;
+    height: 111px;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+  &__animation3{
+    position: absolute;
+    right: -247px;
+    top: 55px;
+    display: block;
+    width: 57%;
+    height: 111px;
+    border-bottom: 1px solid red;
+  }
   &__title{
     display: block;
     position: relative;
@@ -23,6 +51,8 @@
     text-transform: uppercase;
     padding: 20px;
     border: 1px solid #ca2536;
+    z-index: 2;
+    background-color: white;
     &--before{
       display: block;
       position: absolute;
@@ -65,13 +95,20 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    min-height: 341px;
     position: relative;
     float: left;
+    /*.item1{
+      visibility: hidden;
+    }*/
     &--item{
       flex: 1 0 0;
       position: relative;
       float: left;
       text-align: center;
+      opacity: 0;
+      //display: none;
+      /*visibility: hidden;*/
       p{
         position: relative;
         width: 100%;

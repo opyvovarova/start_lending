@@ -32,7 +32,7 @@
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
-/*
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -120,8 +120,6 @@
   -webkit-animation-name: flash;
   animation-name: flash;
 }
-
-!* originally authored by Nick Pettit - https://github.com/nickpettit/glide *!
 
 @-webkit-keyframes pulse {
   from {
@@ -470,8 +468,6 @@
   -webkit-animation-name: tada;
   animation-name: tada;
 }
-
-!* originally authored by Nick Pettit - https://github.com/nickpettit/glide *!
 
 @-webkit-keyframes wobble {
   from {
@@ -1840,7 +1836,7 @@
   backface-visibility: visible;
   -webkit-animation-name: flip;
   animation-name: flip;
-}*/
+}
 
 @-webkit-keyframes flipInX {
   from {
@@ -1915,7 +1911,7 @@
   animation-name: flipInX;
 }
 
-/*@-webkit-keyframes flipInY {
+@-webkit-keyframes flipInY {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -2005,7 +2001,7 @@
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
-}*/
+}
 
 @keyframes flipOutX {
   from {
@@ -2033,7 +2029,7 @@
   backface-visibility: visible !important;
 }
 
-/*
+
 @-webkit-keyframes flipOutY {
   from {
     -webkit-transform: perspective(400px);
@@ -2632,8 +2628,6 @@
   animation-name: hinge;
 }
 
-!* originally authored by Nick Pettit - https://github.com/nickpettit/glide *!
-
 @-webkit-keyframes rollIn {
   from {
     opacity: 0;
@@ -2666,8 +2660,6 @@
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
-
-!* originally authored by Nick Pettit - https://github.com/nickpettit/glide *!
 
 @-webkit-keyframes rollOut {
   from {
@@ -3339,4 +3331,3 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
-*/
