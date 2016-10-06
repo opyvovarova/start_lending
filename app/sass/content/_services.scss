@@ -13,9 +13,17 @@
     display: block;
     position: absolute;
     width: 49%;
+    left: 0;
     height: 56px;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red;
+    &--vertical{
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0%;
+      right: 0;
+      background-color: red;
+      transition: height 3s;
+    }
   }
   &__animation2{
     position: absolute;
@@ -24,9 +32,36 @@
     display: block;
     width: 49%;
     height: 111px;
-    border-top: 1px solid red;
-    border-left: 1px solid red;
-    border-bottom: 1px solid red;
+    &--horizontal{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 100%;
+      top: 0;
+      background-color: red;
+      transition: left 3s, width 3s;
+    }
+    &--horizontal2{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: red;
+      transition:  width 3s;
+    }
+    &--vertical{
+      display: block;
+      position: relative;
+      width: 1px;
+      height: 0;
+      background-color: red;
+      left: 0;
+      top: 0;
+      transition: height 3s;
+    }
   }
   &__animation3{
     position: absolute;
@@ -35,7 +70,73 @@
     display: block;
     width: 57%;
     height: 111px;
-    border-bottom: 1px solid red;
+    &--horizontal{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: red;
+      transition: width 3s;
+    }
+  }
+  &__animation4{
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 87%;
+    bottom: 0;
+    left: -248px;
+    &--horizontal{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s;
+    }
+    &--vertical{
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 3s;
+    }
+  }
+  &__animation5{
+    position: absolute;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 24.66%;
+    height: 8%;
+    border-left: 1px solid white;
+    &--horizontal{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s;
+    }
+    &--vertical{
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 3s;
+    }
   }
   &__title{
     display: block;
@@ -78,18 +179,6 @@
       background-size: contain;
     }
   }
-  &/*__title:after{
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-image: url("../services-bg-after.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }*/
   &__box{
     display: flex;
     flex-wrap: wrap;
@@ -98,17 +187,12 @@
     min-height: 341px;
     position: relative;
     float: left;
-    /*.item1{
-      visibility: hidden;
-    }*/
     &--item{
       flex: 1 0 0;
       position: relative;
       float: left;
       text-align: center;
       opacity: 0;
-      //display: none;
-      /*visibility: hidden;*/
       p{
         position: relative;
         width: 100%;

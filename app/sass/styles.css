@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gilroy Extra Bold';
   src: url("../fonts/Gilroy/GilroyExtraBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyExtraBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroyExtraBold.woff") format("woff"), url("../fonts/Gilroy/GilroyExtraBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroyExtraBold.svg") format("svg"); }
@@ -2516,7 +2517,8 @@ p{
   background-image: url("../img/brand-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: -71px 0; }
   .brand__img {
     display: block;
     position: relative;
@@ -2680,27 +2682,117 @@ p{
     display: block;
     position: absolute;
     width: 49%;
-    height: 56px;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red; }
+    left: 0;
+    height: 56px; }
+    .services__animation1--vertical {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0%;
+      right: 0;
+      background-color: red;
+      transition: height 3s; }
   .services__animation2 {
     position: absolute;
     left: 0;
     top: 55px;
     display: block;
     width: 49%;
-    height: 111px;
-    border-top: 1px solid red;
-    border-left: 1px solid red;
-    border-bottom: 1px solid red; }
+    height: 111px; }
+    .services__animation2--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 100%;
+      top: 0;
+      background-color: red;
+      transition: left 3s, width 3s; }
+    .services__animation2--horizontal2 {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: red;
+      transition: width 3s; }
+    .services__animation2--vertical {
+      display: block;
+      position: relative;
+      width: 1px;
+      height: 0;
+      background-color: red;
+      left: 0;
+      top: 0;
+      transition: height 3s; }
   .services__animation3 {
     position: absolute;
     right: -247px;
     top: 55px;
     display: block;
     width: 57%;
-    height: 111px;
-    border-bottom: 1px solid red; }
+    height: 111px; }
+    .services__animation3--horizontal {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: red;
+      transition: width 3s; }
+  .services__animation4 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 87%;
+    bottom: 0;
+    left: -248px; }
+    .services__animation4--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s; }
+    .services__animation4--vertical {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 3s; }
+  .services__animation5 {
+    position: absolute;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 24.66%;
+    height: 8%;
+    border-left: 1px solid white; }
+    .services__animation5--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #3c8af1;
+      transition: width 3s; }
+    .services__animation5--vertical {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 0;
+      top: 0;
+      right: 0;
+      background-color: #3c8af1;
+      transition: height 3s; }
   .services__title {
     display: block;
     position: relative;
@@ -2739,7 +2831,6 @@ p{
       background-repeat: no-repeat;
       -webkit-background-size: contain;
       background-size: contain; }
-  .services
   .services__box {
     display: flex;
     flex-wrap: wrap;
@@ -2747,19 +2838,13 @@ p{
     width: 100%;
     min-height: 341px;
     position: relative;
-    float: left;
-    /*.item1{
-      visibility: hidden;
-    }*/ }
-    .services
+    float: left; }
     .services__box--item {
       flex: 1 0 0;
       position: relative;
       float: left;
       text-align: center;
-      opacity: 0;
-      /*visibility: hidden;*/ }
-      .services
+      opacity: 0; }
       .services__box--item p {
         position: relative;
         width: 100%;
@@ -2767,7 +2852,6 @@ p{
         font-family: "Gilroy Extra Bold";
         font-size: 20px;
         line-height: 28px; }
-    .services
     .services__box--img {
       display: block;
       position: relative;
@@ -2796,7 +2880,7 @@ p{
   width: 100%;
   float: left;
   background-color: #d95865;
-  /*background-image: url("../img/svc-bg.png");*/
+  background-image: url("../img/svc-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -3028,6 +3112,111 @@ p{
   cursor: pointer;
   z-index: 10;
   display: none; }
+
+.modal__call {
+  width: 394px;
+  height: 415px;
+  background-color: white;
+  border-radius: 0px;
+  border: 3px #000 solid;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -196px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px; }
+  .modal__call--title {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #3c8bf2;
+    font-family: "Gilroy Extra Bold";
+    font-size: 35px; }
+  .modal__call--close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #b3b3b3;
+    color: white; }
+  .modal__call--form {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 0px 42px; }
+  .modal__call--name {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 58px;
+    float: left;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: none;
+    color: #b3b3b3;
+    font-family: "Gilroy Extra Bold";
+    font-size: 20px;
+    padding: 0px 22px; }
+  .modal__call--submit {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: #ca2536;
+    float: left;
+    margin: 10px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Gilroy Extra Bold";
+    font-size: 24px;
+    line-height: 52px; }
+
+/*.modal__call--close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #b3b3b3;
+  color: white;
+}*/
+/* ╨Яo╨┤╨╗o╨╢╨║a */
+#overlay {
+  z-index: 3;
+  /* ╨┐o╨┤╨╗o╨╢╨║a ╨┤o╨╗╨╢╨╜a ╨▒╤Л╤В╤М ╨▓╤Л╤И╨╡ ╤Б╨╗o╨╡╨▓ ╤Н╨╗╨╡╨╝╨╡╨╜╤Вo╨▓ ╤Бa╨╣╤Вa, ╨╜o ╨╜╨╕╨╢╨╡ ╤Б╨╗o╤П ╨╝o╨┤a╨╗╤М╨╜o╨│o o╨║╨╜a */
+  position: fixed;
+  /* ╨▓╤Б╨╡╨│╨┤a ╨┐╨╡╤А╨╡╨║╤А╤Л╨▓a╨╡╤В ╨▓╨╡╤Б╤М ╤Бa╨╣╤В */
+  background-color: #000;
+  /* ╤З╨╡╤А╨╜a╤П */
+  opacity: 0.8;
+  /* ╨╜o ╨╜╨╡╨╝╨╜o╨│o ╨┐╤Аo╨╖╤Аa╤З╨╜a */
+  -moz-opacity: 0.8;
+  /* ╤Д╨╕╨║╤Б ╨┐╤А╨╛╨╖╤А╨░╤З╨╜╨╛╤Б╤В╨╕ ╨┤╨╗╤П ╤Б╤В╨░╤А╤Л╤Е ╨▒╤А╨░╤Г╨╖╨╡╤А╨╛╨▓ */
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  /* ╤Аa╨╖╨╝╨╡╤Аo╨╝ ╨▓o ╨▓╨╡╤Б╤М ╤Н╨║╤Аa╨╜ */
+  top: 0;
+  /* ╤Б╨▓╨╡╤А╤Е╤Г ╨╕ ╤Б╨╗╨╡╨▓a 0, o╨▒╤П╨╖a╤В╨╡╨╗╤М╨╜╤Л╨╡ ╤Б╨▓o╨╣╤Б╤В╨▓a! */
+  left: 0;
+  cursor: pointer;
+  display: none;
+  /* ╨▓ o╨▒╤Л╤З╨╜o╨╝ ╤Бo╤Б╤Вo╤П╨╜╨╕╨╕ ╨╡╤С ╨╜╨╡╤В) */ }
 
 @media only screen and (max-width: 1930px) {
   .header {
