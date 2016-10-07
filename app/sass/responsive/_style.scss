@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
+  .brand {
+    background-position: 0px 0;
+  }
 }
 
 @media only screen and (max-width: 1690px) {
@@ -13,6 +16,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 0px;
+  }
+  .brand {
+    background-position: -71px 0;
   }
 }
 

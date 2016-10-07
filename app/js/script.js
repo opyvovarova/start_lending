@@ -179,7 +179,7 @@ $(document).ready(function () {
             );
     });
     /*close modal*/
-    /*form validation*/
+   /* /!*form validation*!/
     var name = $('.name');//переменная для поля имя только с буквами и пробелами
     var number = $('.number');//переменная для поля только с цифрами
 
@@ -213,5 +213,5 @@ $(document).ready(function () {
         }
     });
 
-    /*close form validation*/
+    /!*close form validation*!/*/
 });

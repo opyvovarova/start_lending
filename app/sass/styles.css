@@ -2704,7 +2704,7 @@ p{
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;*/
-  /*overflow: hidden;*/ }
+  overflow: hidden; }
   .services .square {
     display: block;
     position: absolute;
@@ -2771,10 +2771,10 @@ p{
       transition: height 3s; }
   .services__animation3 {
     position: absolute;
-    right: -247px;
+    right: -240px;
     top: 55px;
     display: block;
-    width: 57%;
+    width: 58%;
     height: 111px; }
     .services__animation3--horizontal {
       display: block;
@@ -3347,21 +3347,28 @@ p{
   display: none;
   /* ╨▓ o╨▒╤Л╤З╨╜o╨╝ ╤Бo╤Б╤Вo╤П╨╜╨╕╨╕ ╨╡╤С ╨╜╨╡╤В) */ }
 
-.error {
-  border: 2px solid red; }
-
+/*
+.error{
+  border: 2px solid red;
+}*/
 @media only screen and (max-width: 1930px) {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 0px; } }
+    background-position: 0px 0px; }
+
+  .brand {
+    background-position: -71px 0; } }
 @media only screen and (max-width: 1690px) {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 0px; } }
+    background-position: 0px 0px; }
+
+  .brand {
+    background-position: -71px 0; } }
 @media only screen and (max-width: 1450px) {
   .header {
     -webkit-background-size: cover;
