@@ -74,6 +74,191 @@
 }
 
 @media only screen and (max-width: 568px) {
+  .header__logo {
+    float: none;
+    margin: 0px auto;
+  }
+  .header__nav #header-menu {
+    display: block;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__nav ul.nav-top li {
+    width: 100%;
+  }
+  .header__nav ul.nav-top {
+    position: absolute;
+    width: 50%;
+    top: 69px;
+    right: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-shadow: 0px 8px 18px 5px #000000;
+  }
+  .header__phone {
+    position: relative;
+    display: block;
+    float: none;
+    margin: 0px auto;
+    margin-top: 126px;
+    width: 234px;
+    text-align: center;
+  }
+  .header__phone--call, .header__phone--tel {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    color: #ca2536;
+  }
+  .header__phone--call {
+    border: 3px solid #ca2536;
+  }
+  .top-slider__box--item {
+    height: 300px;
+  }
+  .top-slider__box--content {
+    top: 28px;
+    left: 0;
+    width: 100%;
+  }
+  .top-slider__box--title {
+    font-size: 110px;
+  }
+  .top-slider__box--subtitle span {
+    width: 23px;
+    height: 24px;
+  }
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  .top-slider__box--uptitle {
+    float: left;
+    margin-bottom: -43px;
+    font-size: 20px;
+  }
+
+  .brand {
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 0 0;
+  }
+  .brand__img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+    width: 83px;
+    height: 175px;
+  }
+  .brand__uptitle {
+    margin-top: 28px;
+    margin-bottom: -27px;
+    padding-left: 90px;
+    font-size: 15px;
+  }
+  .brand__title {
+    margin: 0;
+    padding-right: 0;
+    color: #3c8bf2;
+    font-size: 80px;
+  }
+  .brand__box--left, .brand__box--right {
+    width: 100%;
+  }
+  .brand__box--order {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+  }
+
+  .model__title {
+    margin-top: 30px;
+    margin-bottom: 39px;
+    letter-spacing: 21px;
+    font-size: 40px;
+  }
+  .model__tg th.model__tg--title {
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 20px;
+  }
+  .model__tg th.model__tg--subtitle {
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 10px;
+  }
+  .model__tg td.model__tg--name {
+    padding: 30px 0;
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .services__title {
+    margin-top: 39px;
+    margin-bottom: 60px;
+    padding: 3px;
+    font-size: 30px;
+  }
+  .services__animation1, .services__animation2, .services__animation3, .services__animation3, .services__animation4, .services__animation5 {
+    display: none;
+  }
+  .services__box--item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .services .square-bottom {
+    left: 49%;
+  }
+
+  .svc {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: -3px -16px;
+  }
+  .svc__box {
+    margin: 49px 0;
+  }
+  .svc__title {
+    margin: 0;
+    font-size: 30px;
+    font-family: Gilroy Extra Bold;
+    line-height: 27px;
+  }
+  .svc .square {
+    left: 49%;
+  }
+  .svc__subtitle {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .svc__list{
+    padding-left: 14px;
+  }
+  .svc__list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .footer__map {
+    height: 230px;
+  }
 
 }
 
