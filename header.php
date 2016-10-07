@@ -27,7 +27,8 @@
 		<div class="header__logo">
 
 			<div class="header__logo--img">
-				<img src="<?php bloginfo('template_directory'); ?>/img/head-logo.png" alt="logo">
+				<?php $logo = fw_get_db_customizer_option('logo'); ?>
+				<img src="<?php echo (!empty($logo['url']))? $logo['url']: get_bloginfo('template_directory').'/img/head-logo.png'; ?>" alt="logo">
 			</div>
 
 		</div>
@@ -44,9 +45,9 @@
 
 		<div class="header__phone">
 
-			<span class="header__phone--tel">+7(495)461-62-30</span>
+			<span class="header__phone--tel"><?php echo fw_get_db_customizer_option('phone'); ?></span>
 
-			<a href="tel:+74954616230" class="header__phone--call">Заказать звонок</a>
+			<a href="tel:<?php echo fw_get_db_customizer_option('phone'); ?>" class="header__phone--call">Заказать звонок</a>
 
 		</div>
 
@@ -57,51 +58,38 @@
 
 				<div class="top-slider__box--item">
 					<img src="<?php bloginfo('template_directory'); ?>/img/top-slide1.png" alt="">
-
 					<div class="top-slider__box--content">
 						<h1 class="top-slider__box--title">старт</h1>
-
 						<p class="top-slider__box--subtitle">
 							<span></span>
 							Дизельные генераторы</p>
 					</div>
-
-
 				</div>
 
 				<div class="top-slider__box--item">
 					<!--<img src="img/top-slide1.png" alt="">-->
-
 					<div class="top-slider__box--content">
 						<h1 class="top-slider__box--title">4000 <span>м</span><sup>2</sup></h1>
-
 						<p class="top-slider__box--subtitle">Производственная площадка</p>
 					</div>
-
 				</div>
 
 				<div class="top-slider__box--item">
 					<img src="<?php bloginfo('template_directory'); ?>/img/top-slide2.png" alt="">
-
 					<div class="top-slider__box--content">
 						<span class="top-slider__box--uptitle">Постоянное <br>наличие</span>
 						<h1 class="top-slider__box--title" style="text-transform: capitalize;">Станций</h1>
-
 						<p class="top-slider__box--subtitle">более 200 единиц в стоке</p>
 					</div>
-
 				</div>
 
 				<div class="top-slider__box--item">
 					<img src="<?php bloginfo('template_directory'); ?>/img/top-slide3.png" alt="">
-
 					<div class="top-slider__box--content">
 						<span class="top-slider__box--uptitle">Широкий склад <br>запасных</span>
 						<h1 class="top-slider__box--title" style="text-transform: capitalize;">Частей</h1>
-
 						<p class="top-slider__box--subtitle">Более 10 000 найменований постоянно в наличии</p>
 					</div>
-
 				</div>
 
 			</div>
