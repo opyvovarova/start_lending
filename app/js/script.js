@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+    /*header mobile menu*/
+    var pull = $('#header-menu');
+    var menu = $('.nav-top');
+    var menuHeight = menu.height();
+
+    $(pull).on('click', function (e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+
+    $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    });
+    /*close  header mobile menu*/
+    
     /*menu scroll*/
     $('.smoothScroll').click(function (event) {
         event.preventDefault();
@@ -161,4 +179,39 @@ $(document).ready(function () {
             );
     });
     /*close modal*/
+   /* /!*form validation*!/
+    var name = $('.name');//переменная для поля имя только с буквами и пробелами
+    var number = $('.number');//переменная для поля только с цифрами
+
+    name.unbind().blur( function(){//валидация поля формы с буквами, цифрами и символами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([a-zA-Zа-яА-Я0-9\D])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+
+    number.unbind().blur( function(){//валидация поля формы с буквами, цифрами и символами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([0-9_+.])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+
+    /!*close form validation*!/*/
 });

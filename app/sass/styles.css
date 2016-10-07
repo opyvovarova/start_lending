@@ -2321,7 +2321,7 @@ p{
     position: relative;
     width: calc(100% - (285px + 234px));
     float: left; }
-    .header__nav ul {
+    .header__nav ul.nav-top {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -2330,12 +2330,13 @@ p{
       float: left;
       margin: 0;
       list-style: none;
-      margin-top: 70px; }
-      .header__nav ul li {
+      margin-top: 70px;
+      z-index: 999; }
+      .header__nav ul.nav-top li {
         flex: 1 0 0;
         position: relative;
         float: left; }
-        .header__nav ul li a {
+        .header__nav ul.nav-top li a {
           display: block;
           position: relative;
           width: 100%;
@@ -2350,8 +2351,35 @@ p{
           -ms-transition: all 0.4s linear;
           -o-transition: all 0.4s linear;
           transition: all 0.4s linear; }
-          .header__nav ul li a:hover {
+          .header__nav ul.nav-top li a:hover {
             color: #ca2536; }
+    .header__nav #header-menu {
+      display: none;
+      position: relative;
+      width: 100%;
+      float: left;
+      color: #1a3c68;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 10px 10px;
+      border: 1px solid #1a3c68;
+      border-radius: 4px;
+      margin-top: 81px; }
+      .header__nav #header-menu .mob-btn {
+        position: relative;
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: 7px; }
+        .header__nav #header-menu .mob-btn span {
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 4px;
+          background-color: #1a3c68;
+          margin: 3px auto; }
   .header__phone {
     display: block;
     position: relative;
@@ -2540,7 +2568,7 @@ p{
     color: #ca2536;
     font-family: "Gilroy Extra Bold";
     font-size: 28px;
-    margin-top: 54px;
+    margin-top: 75px;
     padding-left: 90px;
     margin-bottom: -49px; }
   .brand__title {
@@ -2677,7 +2705,7 @@ p{
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;*/
-  /*overflow: hidden;*/ }
+  overflow: hidden; }
   .services .square {
     display: block;
     position: absolute;
@@ -2744,10 +2772,10 @@ p{
       transition: height 3s; }
   .services__animation3 {
     position: absolute;
-    right: -247px;
+    right: -240px;
     top: 55px;
     display: block;
-    width: 57%;
+    width: 58%;
     height: 111px; }
     .services__animation3--horizontal {
       display: block;
@@ -2969,7 +2997,7 @@ p{
     position: relative;
     width: 100%;
     float: left;
-    list-style-type: disc; }
+    padding-left: 11px; }
     .svc__list li {
       display: block;
       position: relative;
@@ -3320,24 +3348,37 @@ p{
   display: none;
   /* ╨▓ o╨▒╤Л╤З╨╜o╨╝ ╤Бo╤Б╤Вo╤П╨╜╨╕╨╕ ╨╡╤С ╨╜╨╡╤В) */ }
 
+/*
+.error{
+  border: 2px solid red;
+}*/
 @media only screen and (max-width: 1930px) {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 0px; } }
+    background-position: 0px 0px; }
+
+  .brand {
+    background-position: -9px 0; } }
 @media only screen and (max-width: 1690px) {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 0px; } }
+    background-position: 0px 0px; }
+
+  .brand {
+    background-position: -71px 0; } }
 @media only screen and (max-width: 1450px) {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -108px 0px; } }
+    background-position: -108px 0px; }
+
+  .brand {
+    background-position: -199px 0; } }
 @media only screen and (max-width: 1390px) {
   .header {
     -webkit-background-size: cover;
@@ -3349,7 +3390,38 @@ p{
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -148px 0px; } }
+    background-position: -148px 0px; }
+
+  .brand {
+    background-position: -249px 0; } }
+@media only screen and (max-width: 1025px) {
+  .header__logo {
+    margin-top: 50px;
+    width: 200px; }
+
+  .header__logo--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+  .header__nav {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(100% - 200px); }
+
+  .header__phone--call, .header__phone--tel {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    color: #ca2536; }
+
+  .header__phone--call {
+    border: 3px solid #ca2536; }
+
+  .brand {
+    background-position: -442px 0; } }
 @media only screen and (max-width: 770px) {
   .model__tg {
     width: auto !important; }
@@ -3360,5 +3432,227 @@ p{
   .tg-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; } }
+@media only screen and (max-width: 568px) {
+  .header__logo {
+    float: none;
+    margin: 0px auto; }
+
+  .header__nav #header-menu {
+    display: block; }
+
+  .header__nav {
+    width: 100%; }
+
+  .header__nav ul.nav-top li {
+    width: 100%; }
+
+  .header__nav ul.nav-top {
+    position: absolute;
+    width: 50%;
+    top: 132px;
+    right: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-shadow: 0px 8px 18px 5px #000000;
+    z-index: 999; }
+
+  .header__phone {
+    position: relative;
+    display: block;
+    float: none;
+    margin: 0px auto;
+    margin-top: 126px;
+    width: 234px;
+    text-align: center; }
+
+  .header__phone--call, .header__phone--tel {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    color: #ca2536; }
+
+  .header__phone--call {
+    border: 3px solid #ca2536; }
+
+  .top-slider__box--item {
+    height: 300px; }
+
+  .top-slider__box--content {
+    top: 28px;
+    left: 0;
+    width: 100%; }
+
+  .top-slider__box--title {
+    font-size: 110px; }
+
+  .top-slider__box--subtitle span {
+    width: 23px;
+    height: 24px; }
+
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 18px; }
+
+  .top-slider__box--uptitle {
+    float: left;
+    margin-bottom: -43px;
+    font-size: 20px; }
+
+  .brand {
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 0 0; }
+
+  .brand__img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+    width: 83px;
+    height: 175px; }
+
+  .brand__uptitle {
+    margin-top: 28px;
+    margin-bottom: -27px;
+    padding-left: 90px;
+    font-size: 15px; }
+
+  .brand__title {
+    margin: 0;
+    padding-right: 0;
+    color: #3c8bf2;
+    font-size: 80px; }
+
+  .brand__box--left, .brand__box--right {
+    width: 100%; }
+
+  .brand__box--order {
+    display: inline-block;
+    float: none;
+    margin: 10px auto; }
+
+  .model__title {
+    margin-top: 30px;
+    margin-bottom: 39px;
+    letter-spacing: 21px;
+    font-size: 40px; }
+
+  .model__tg th.model__tg--title {
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 20px; }
+
+  .model__tg th.model__tg--subtitle {
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 10px; }
+
+  .model__tg td.model__tg--name {
+    padding: 30px 0;
+    color: #3c8bf2;
+    vertical-align: top;
+    text-align: center;
+    font-size: 10px; }
+
+  .services__title {
+    margin-top: 39px;
+    margin-bottom: 60px;
+    padding: 3px;
+    font-size: 30px; }
+
+  .services__animation1, .services__animation2, .services__animation3, .services__animation3, .services__animation4, .services__animation5 {
+    display: none; }
+
+  .services__box--item {
+    flex: 0 0 100%;
+    width: 100%; }
+
+  .services .square-bottom {
+    left: 49%; }
+
+  .svc {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: -3px -16px; }
+
+  .svc__box {
+    margin: 49px 0; }
+
+  .svc__title {
+    margin: 0;
+    font-size: 30px;
+    font-family: Gilroy Extra Bold;
+    line-height: 27px; }
+
+  .svc .square {
+    left: 49%; }
+
+  .svc__subtitle {
+    margin: 15px 0;
+    font-size: 16px; }
+
+  .svc__list {
+    padding-left: 14px; }
+
+  .svc__list li {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .contacts__box {
+    margin-bottom: 30px;
+    width: 100%; }
+
+  .footer__map {
+    height: 230px; } }
+@media only screen and (max-width: 380px) {
+  .top-slider__box--content {
+    top: 102px;
+    left: 0;
+    width: 100%; }
+
+  .top-slider__box--title {
+    font-size: 65px; }
+
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 12px; }
+
+  .brand__box--order {
+    font-size: 14px; }
+
+  .model__title {
+    letter-spacing: 5px; }
+
+  .model__tg th.model__tg--title {
+    font-size: 11px; }
+
+  .model__tg td.model__tg--name, .model__tg th.model__tg--subtitle {
+    font-size: 6px; }
+
+  .services__title {
+    width: 75%; }
+
+  .services .brand__box--order {
+    font-size: 14px; }
+
+  .svc__box--right {
+    display: none; }
+
+  .contacts__title {
+    font-size: 58px; }
+
+  .contacts__subtitle {
+    font-size: 27px; } }
 
 /*# sourceMappingURL=styles.css.map */
