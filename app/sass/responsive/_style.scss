@@ -96,6 +96,51 @@
 }
 
 @media only screen and (max-width: 770px) {
+  .header__nav ul.nav-top li a {
+    font-size: 16px;
+  }
+
+  .top-slider__box--item {
+    height: 300px;
+  }
+  .top-slider__box--content {
+    top: 28px;
+    left: 0;
+    width: 100%;
+  }
+  .top-slider__box--title {
+    font-size: 110px;
+  }
+  .top-slider__box--subtitle span {
+    width: 23px;
+    height: 24px;
+  }
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  .top-slider__box--uptitle {
+    float: left;
+    margin-bottom: -43px;
+    font-size: 20px;
+  }
+
+  .brand {
+    background-position: -621px 0;
+  }
+
+
+  .model__tg th.model__tg--title {
+    font-size: 40px;
+  }
+  .model__tg th.model__tg--subtitle {
+    font-size: 30px;
+  }
+  .model__tg td.model__tg--name {
+    font-size: 10px;
+  }
   .model__tg {
     width: auto !important;
   }
@@ -107,9 +152,90 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  .services .square {
+    top: 0;
+    left: 47.66%;
+    background-color: red;
+  }
+  .services__title {
+    margin-top: 117px;
+    font-size: 48px;
+  }
+  .services__animation2 {
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    display: block;
+    width: 40%;
+    height: 111px;
+  }
+  .services__animation3 {
+    position: absolute;
+    top: 55px;
+    right: -143px;
+    display: block;
+    width: 58%;
+    height: 111px;
+  }
+  .services__animation4 {
+    position: absolute;
+    bottom: 0;
+    left: -24px;
+    display: block;
+    width: 7%;
+    height: 87%;
+  }
+  .services__animation5 {
+    display: none;
+  }
+  .services__box--item {
+    flex: 1 0 50%;
+    width: 50%;
+  }
+  .services .brand__box--order {
+    margin-top: 141px;
+  }
+  .services .square-bottom {
+    left: 18px;
+  }
+
+  .svc .square {
+    left: 18px;
+  }
+  .svc__box--right{
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 680px) {
+
+  .top-slider__box--item {
+    height: 300px;
+  }
+  .top-slider__box--content {
+    top: 28px;
+    left: 0;
+    width: 100%;
+  }
+  .top-slider__box--title {
+    font-size: 110px;
+  }
+  .top-slider__box--subtitle span {
+    width: 23px;
+    height: 24px;
+  }
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  .top-slider__box--uptitle {
+    float: left;
+    margin-bottom: -43px;
+    font-size: 20px;
+  }
 
 }
 
