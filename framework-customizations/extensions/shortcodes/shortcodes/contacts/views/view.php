@@ -19,6 +19,14 @@
 			</a>
 		</div>
 	</div>
+	<div class="contacts__animation1">
+		<div class="contacts__animation1--vertical"></div>
+		<div class="contacts__animation1--horizontal"></div>
+
+	</div>
+	<div class="contacts__animation2">
+		<div class="contacts__animation2--vertical"></div>
+	</div>
 	<span class="square-bottom"></span>
 </section>
 <!-- end contacts.html-->
