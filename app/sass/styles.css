@@ -2678,6 +2678,22 @@ p{
   -webkit-background-size: cover;
   background-size: cover;*/
   /*overflow: hidden;*/ }
+  .services .square {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 48.66%;
+    width: 22px;
+    height: 15px;
+    background-color: red; }
+  .services .square-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 356px;
+    width: 22px;
+    height: 15px;
+    background-color: #3c8af1; }
   .services__animation1 {
     display: block;
     position: absolute;
@@ -2884,7 +2900,16 @@ p{
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 23px 0; }
+  background-position: 23px 0;
+  /*.square-bottom{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 356px;
+    width: 22px;
+    height: 15px;
+    background-color: #3c8af1;
+  }*/ }
   .svc .square {
     display: block;
     position: absolute;
@@ -3183,18 +3208,95 @@ p{
     font-size: 24px;
     line-height: 52px; }
 
-/*.modal__call--close {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  display: block;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #b3b3b3;
-  color: white;
-}*/
+.modal__order {
+  width: 394px;
+  height: auto;
+  background-color: white;
+  border-radius: 0px;
+  border: 3px #000 solid;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -196px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px; }
+  .modal__order--title {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #3c8bf2;
+    font-family: "Gilroy Extra Bold";
+    font-size: 35px; }
+  .modal__order--subtitle {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-family: "Gilroy Extra Bold";
+    font-size: 14px;
+    margin-top: 10px; }
+  .modal__order--close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #b3b3b3;
+    color: white; }
+  .modal__order--form {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 0px 42px; }
+  .modal__order--name {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 58px;
+    float: left;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: none;
+    color: #b3b3b3;
+    font-family: "Gilroy Extra Bold";
+    font-size: 20px;
+    padding: 0px 22px; }
+  .modal__order--select {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 58px;
+    border: 2px solid #e8e8e8;
+    color: #3c8bf2;
+    font-family: "Gilroy Extra Bold";
+    font-size: 24px;
+    padding: 0px 22px; }
+  .modal__order--submit {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: #ca2536;
+    float: left;
+    margin: 10px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Gilroy Extra Bold";
+    font-size: 24px;
+    line-height: 52px; }
+
 /* ╨Яo╨┤╨╗o╨╢╨║a */
 #overlay {
   z-index: 3;
