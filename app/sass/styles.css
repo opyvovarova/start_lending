@@ -2465,6 +2465,31 @@ p{
         background-color: #63a2f5;
         box-sizing: border-box;
         line-height: 70px; }
+    .top-slider__box--title3 {
+      position: relative;
+      display: block;
+      float: left;
+      margin-top: 65px;
+      margin-bottom: 0;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 167px;
+      font-family: "Gilroy Extra Bold"; }
+      .top-slider__box--title3 span {
+        text-transform: none; }
+      .top-slider__box--title3 sup {
+        text-transform: none;
+        font-size: 70px;
+        position: absolute;
+        top: -12px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #63a2f5;
+        box-sizing: border-box;
+        line-height: 70px; }
     .top-slider__box--uptitle {
       display: block;
       position: relative;
@@ -2491,6 +2516,33 @@ p{
       margin-top: -52px;
       /*text-shadow: 1px 1px 3px #000000;*/ }
       .top-slider__box--subtitle span {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 42px;
+        float: left;
+        background-image: url("../img/icons/drop-icon.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 0px; }
+    .top-slider__box--subtitle3 {
+      display: block;
+      position: relative;
+      width: 50%;
+      padding: 13px 0px;
+      float: right;
+      text-align: center;
+      color: white;
+      font-family: "Gilroy Light";
+      font-size: 31px;
+      border: 1px solid white;
+      border-left: 1px solid transparent;
+      margin-bottom: 0;
+      margin-top: -35px;
+      /*text-shadow: 1px 1px 3px #000000;*/ }
+      .top-slider__box--subtitle3 span {
         display: block;
         position: relative;
         width: 40px;
