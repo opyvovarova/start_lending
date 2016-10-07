@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 0 -66px;
+  background-position: -11px -66px;
   .square{
     display: block;
     position: absolute;
@@ -17,12 +17,13 @@
     width: 22px;
     height: 15px;
     background-color: #3b87ec;
+    z-index: 2;
   }
   .square-bottom{
     display: block;
     position: absolute;
     bottom: 0;
-    left: 50.66%;
+    left: 50%;
     width: 22px;
     height: 15px;
     background-color: #3c8af1;
@@ -95,6 +96,53 @@
         top: 7px;
         right: 114px;
       }
+    }
+  }
+  &__animation1{
+    display: block;
+    position: absolute;
+    width: 38.99%;
+    top: 0;
+    left: 196px;
+    height: 75%;
+    &--vertical{
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 1px;
+      height: 0;
+      background-color: #d4e4f8;
+      transition: height 3s;
+    }
+    &--horizontal{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: #d4e4f8;
+      transition: width 3s;
+    }
+  }
+  &__animation2{
+    position: absolute;
+    bottom: 0;
+    left: 196px;
+    display: block;
+    width: 38.99%;
+    height: 25%;
+    //border-right: 1px solid red;
+    &--vertical{
+      position: relative;
+      top: 0;
+      left: 100%;
+      display: block;
+      width: 1px;
+      height: 0;
+      background-color: #d4e4f8;
+      transition: height 3s;
     }
   }
 }

@@ -3031,7 +3031,7 @@ p{
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 0 -66px; }
+  background-position: -11px -66px; }
   .contacts .square {
     display: block;
     position: absolute;
@@ -3039,12 +3039,13 @@ p{
     left: 186px;
     width: 22px;
     height: 15px;
-    background-color: #3b87ec; }
+    background-color: #3b87ec;
+    z-index: 2; }
   .contacts .square-bottom {
     display: block;
     position: absolute;
     bottom: 0;
-    left: 50.66%;
+    left: 50%;
     width: 22px;
     height: 15px;
     background-color: #3c8af1; }
@@ -3110,6 +3111,47 @@ p{
         position: absolute;
         top: 7px;
         right: 114px; }
+  .contacts__animation1 {
+    display: block;
+    position: absolute;
+    width: 38.99%;
+    top: 0;
+    left: 196px;
+    height: 75%; }
+    .contacts__animation1--vertical {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 1px;
+      height: 0;
+      background-color: #d4e4f8;
+      transition: height 3s; }
+    .contacts__animation1--horizontal {
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: #d4e4f8;
+      transition: width 3s; }
+  .contacts__animation2 {
+    position: absolute;
+    bottom: 0;
+    left: 196px;
+    display: block;
+    width: 38.99%;
+    height: 25%; }
+    .contacts__animation2--vertical {
+      position: relative;
+      top: 0;
+      left: 100%;
+      display: block;
+      width: 1px;
+      height: 0;
+      background-color: #d4e4f8;
+      transition: height 3s; }
 
 .footer {
   display: block;
@@ -3360,7 +3402,39 @@ p{
     background-position: 0px 0px; }
 
   .brand {
-    background-position: -9px 0; } }
+    background-position: -9px 0; }
+
+  .svc {
+    background-position: 52px 0; }
+
+  .services__animation4 {
+    position: absolute;
+    bottom: 0;
+    left: -354px;
+    display: block;
+    width: 16%;
+    height: 87%; }
+
+  .services__animation5 {
+    position: absolute;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 24.66%;
+    height: 8%;
+    border-left: 6px solid #fff; }
+
+  .services .square-bottom {
+    left: 468px; }
+
+  .svc .square {
+    left: 468px; }
+
+  .contacts {
+    background-position: -41px -128px; }
+
+  .contacts .square-bottom {
+    left: 48.66%; } }
 @media only screen and (max-width: 1690px) {
   .header {
     -webkit-background-size: cover;
@@ -3369,7 +3443,19 @@ p{
     background-position: 0px 0px; }
 
   .brand {
-    background-position: -71px 0; } }
+    background-position: -71px 0; }
+
+  .services .square-bottom {
+    left: 356px; }
+
+  .svc .square {
+    left: 356px; }
+
+  .contacts {
+    background-position: -11px -66px; }
+
+  .contacts .square-bottom {
+    left: 50%; } }
 @media only screen and (max-width: 1450px) {
   .header {
     -webkit-background-size: cover;
@@ -3378,7 +3464,31 @@ p{
     background-position: -108px 0px; }
 
   .brand {
-    background-position: -199px 0; } }
+    background-position: -199px 0; }
+
+  .services .square-bottom, .svc .square {
+    left: 237px; }
+
+  .contacts .square {
+    left: 99px; }
+
+  .contacts__animation1 {
+    left: 110px;
+    width: 38.99%;
+    height: 75%; }
+
+  .contacts__animation2 {
+    bottom: 0;
+    left: 109px;
+    display: block;
+    width: 38.99%;
+    height: 25%; }
+
+  .contacts .square-bottom {
+    left: 46%; }
+
+  .contacts {
+    background-position: -67px -12px; } }
 @media only screen and (max-width: 1390px) {
   .header {
     -webkit-background-size: cover;
@@ -3393,7 +3503,33 @@ p{
     background-position: -148px 0px; }
 
   .brand {
-    background-position: -249px 0; } }
+    background-position: -249px 0; }
+
+  .services .square {
+    top: 0;
+    left: 653px;
+    background-color: red; }
+
+  .services .square-bottom, .svc .square {
+    left: 199px; }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 30px; } }
+@media only screen and (max-width: 1280px) {
+  .services .square {
+    left: 609px; }
+
+  .services .square-bottom, .svc .square {
+    left: 156px; }
+
+  .contacts {
+    background-position: -98px -12px; }
+
+  .contacts .square-bottom {
+    left: 47%; }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 77px; } }
 @media only screen and (max-width: 1025px) {
   .header__logo {
     margin-top: 50px;
@@ -3420,8 +3556,32 @@ p{
   .header__phone--call {
     border: 3px solid #ca2536; }
 
+  .services .square {
+    left: 483px; }
+
+  .services__title {
+    font-size: 64px; }
+
+  .services__animation3 {
+    right: -170px; }
+
+  .services .brand__box--order {
+    margin-top: 138px; }
+
+  .services .square-bottom, .svc .square {
+    left: 79px; }
+
   .brand {
-    background-position: -442px 0; } }
+    background-position: -442px 0; }
+
+  .contacts {
+    background-position: -237px -12px; }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 100px; }
+
+  .contacts .square-bottom {
+    left: 49%; } }
 @media only screen and (max-width: 770px) {
   .header__nav ul.nav-top li a {
     font-size: 16px; }
@@ -3688,7 +3848,9 @@ p{
     padding: 3px;
     font-size: 30px; }
 
-  .services__animation1, .services__animation2, .services__animation3, .services__animation3, .services__animation4, .services__animation5 {
+  .services__animation1, .services__animation2, .services__animation3,
+  .services__animation3, .services__animation4, .services__animation5,
+  .contacts__animation1, .contacts__animation2 {
     display: none; }
 
   .services__box--item {
@@ -3730,8 +3892,55 @@ p{
     margin-bottom: 30px;
     width: 100%; }
 
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px; }
+
   .footer__map {
     height: 230px; } }
+@media only screen and (max-width: 420px) {
+  .top-slider__box--content {
+    top: 102px;
+    left: 0;
+    width: 100%; }
+
+  .top-slider__box--title {
+    font-size: 65px; }
+
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 12px; }
+
+  .brand__box--order {
+    font-size: 14px; }
+
+  .model__title {
+    letter-spacing: 5px; }
+
+  .model__tg th.model__tg--title {
+    font-size: 11px; }
+
+  .model__tg td.model__tg--name, .model__tg th.model__tg--subtitle {
+    font-size: 6px; }
+
+  .services__title {
+    width: 75%; }
+
+  .services .brand__box--order {
+    font-size: 14px; }
+
+  .svc__box--right {
+    display: none; }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px; }
+
+  .contacts__title {
+    font-size: 58px; }
+
+  .contacts__subtitle {
+    font-size: 27px; } }
 @media only screen and (max-width: 380px) {
   .top-slider__box--content {
     top: 102px;
@@ -3767,6 +3976,9 @@ p{
 
   .svc__box--right {
     display: none; }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px; }
 
   .contacts__title {
     font-size: 58px; }

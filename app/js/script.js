@@ -83,6 +83,11 @@ $(document).ready(function () {
             $('.contacts__box--address').addClass('animated fadeInLeft');//добавляются классы для анимации
             $('.contacts__box--call').addClass('animated fadeInRight');//добавляются классы для анимации
         }
+        if ( ($(this).scrollTop() + windowHeight) >= $('.contacts__animation1').offset().top) {//до начала блока с классом contacts__box
+            $('.contacts__animation1--vertical').css({height:"100%"});
+            $('.contacts__animation1--horizontal').css({width:"100%"});
+            $('.contacts__animation2--vertical').css({height:"100%"});
+        }
     });
     /*close services animation*/
     

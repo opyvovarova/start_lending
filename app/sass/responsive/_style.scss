@@ -8,6 +8,41 @@
   .brand {
     background-position: -9px 0;
   }
+  .svc {
+    background-position: 52px 0;
+  }
+
+  .services__animation4 {
+    position: absolute;
+    bottom: 0;
+    left: -354px;
+    display: block;
+    width: 16%;
+    height: 87%;
+  }
+  .services__animation5 {
+    position: absolute;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 24.66%;
+    height: 8%;
+    border-left: 6px solid #fff;
+  }
+  .services .square-bottom {
+    left: 468px;
+  }
+  .svc .square {
+    left: 468px;
+  }
+
+  .contacts {
+    background-position: -41px -128px;
+  }
+  .contacts .square-bottom {
+    left: 48.66%;
+  }
+
 }
 
 @media only screen and (max-width: 1690px) {
@@ -19,6 +54,20 @@
   }
   .brand {
     background-position: -71px 0;
+  }
+
+  .services .square-bottom {
+    left: 356px;
+  }
+  .svc .square {
+    left: 356px;
+  }
+
+  .contacts {
+    background-position: -11px -66px;
+  }
+  .contacts .square-bottom {
+    left: 50%;
   }
 }
 
@@ -32,6 +81,34 @@
   .brand {
     background-position: -199px 0;
   }
+
+  .services .square-bottom, .svc .square {
+    left: 237px;
+  }
+
+  .contacts .square {
+    left: 99px;
+  }
+
+  .contacts__animation1 {
+    left: 110px;
+    width: 38.99%;
+    height: 75%;
+  }
+  .contacts__animation2 {
+    bottom: 0;
+    left: 109px;
+    display: block;
+    width: 38.99%;
+    height: 25%;
+  }
+  .contacts .square-bottom {
+    left: 46%;
+  }
+  .contacts {
+    background-position: -67px -12px;
+  }
+
 }
 
 @media only screen and (max-width: 1390px) {
@@ -53,10 +130,39 @@
   .brand {
     background-position: -249px 0;
   }
+
+  .services .square {
+    top: 0;
+    left: 653px;
+    background-color: red;
+  }
+  .services .square-bottom, .svc .square {
+    left: 199px;
+  }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 30px;
+  }
+
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
+  .services .square {
+    left: 609px;
+  }
+  .services .square-bottom, .svc .square {
+    left: 156px;
+  }
 
+  .contacts {
+    background-position: -98px -12px;
+  }
+  .contacts .square-bottom {
+    left: 47%;
+  }
+  .contacts__subtitle, .contacts__title {
+    padding-left: 77px;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
@@ -86,8 +192,34 @@
     border: 3px solid #ca2536;
   }
 
+  .services .square {
+    left: 483px;
+  }
+  .services__title {
+    font-size: 64px;
+  }
+  .services__animation3 {
+    right: -170px;
+  }
+  .services .brand__box--order {
+    margin-top: 138px;
+  }
+  .services .square-bottom, .svc .square {
+    left: 79px;
+  }
+
   .brand {
     background-position: -442px 0;
+  }
+
+  .contacts {
+    background-position: -237px -12px;
+  }
+  .contacts__subtitle, .contacts__title {
+    padding-left: 100px;
+  }
+  .contacts .square-bottom {
+    left: 49%;
   }
 }
 
@@ -379,7 +511,9 @@
     padding: 3px;
     font-size: 30px;
   }
-  .services__animation1, .services__animation2, .services__animation3, .services__animation3, .services__animation4, .services__animation5 {
+  .services__animation1, .services__animation2, .services__animation3,
+  .services__animation3, .services__animation4, .services__animation5,
+  .contacts__animation1, .contacts__animation2 {
     display: none;
   }
   .services__box--item {
@@ -423,6 +557,9 @@
     margin-bottom: 30px;
     width: 100%;
   }
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px;
+  }
   .footer__map {
     height: 230px;
   }
@@ -430,7 +567,55 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .top-slider__box--content {
+    top: 102px;
+    left: 0;
+    width: 100%;
+  }
+  .top-slider__box--title {
+    font-size: 65px;
+  }
+  .top-slider__box--subtitle {
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding: 8px 0;
+    font-size: 12px;
+  }
 
+  .brand__box--order {
+    font-size: 14px;
+  }
+
+  .model__title {
+    letter-spacing: 5px;
+  }
+  .model__tg th.model__tg--title {
+    font-size: 11px;
+  }
+  .model__tg td.model__tg--name, .model__tg th.model__tg--subtitle {
+    font-size: 6px;
+  }
+
+  .services__title {
+    width: 75%;
+  }
+  .services .brand__box--order {
+    font-size: 14px;
+  }
+
+  .svc__box--right{
+    display: none;
+  }
+
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px;
+  }
+  .contacts__title {
+    font-size: 58px;
+  }
+  .contacts__subtitle {
+    font-size: 27px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -474,6 +659,9 @@
     display: none;
   }
 
+  .contacts__subtitle, .contacts__title {
+    padding-left: 0px;
+  }
   .contacts__title {
     font-size: 58px;
   }
