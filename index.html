@@ -316,6 +316,8 @@
 <!-- start services.html-->
 <section class="services">
 
+    <span class="square"></span>
+
     <div class="container">
 
         <a name="services" id="go_services"></a>
@@ -414,6 +416,8 @@
 
     </div>
 
+    <span class="square-bottom"></span>
+
 </section>
 <!-- end services.html-->
 
@@ -447,7 +451,6 @@
             </div>
 
             <div class="svc__box--right">
-
                 
                 <div class="svc__box--img">
 
@@ -455,16 +458,13 @@
                     
                 </div>
 
-
-
             </div>
-
 
         </div>
 
-
-
     </div>
+
+    <!--<span class="square-bottom"></span>-->
 
 </section>
 <!-- end svc.html-->
@@ -532,7 +532,41 @@
     </form>
 
 </div>
-<div id="overlay"></div><!-- Пoдлoжкa -->
+<div class="modal__order">
+    <span class="modal__order--close">X</span>
+
+    <h3 class="modal__order--title">Заказать звонок</h3>
+
+    <form action="" class="modal__order--form">
+
+        <input class="modal__order--name" type="text" placeholder="Ваше имя">
+
+        <input class="modal__order--name" type="text" placeholder="Номер телефона">
+
+        <p class="modal__order--subtitle">Модель генератора:</p>
+
+        <select name="model" id="" class="modal__order--select">
+            <option value="10">АД 10-Т400</option>
+            <option value="16">АД 16-Т400</option>
+            <option value="20">АД 20-Т400</option>
+            <option value="24">АД 24-Т400</option>
+            <option value="30">АД 30-Т400</option>
+            <option value="40">АД 40-Т400</option>
+            <option value="50">АД 50-Т400</option>
+            <option value="60">АД 60-Т400</option>
+            <option value="80">АД 80-Т400</option>
+            <option value="100">АД 100-Т400</option>
+            <option value="150">АД 150-Т400</option>
+            <option value="200">АД 200-Т400</option>
+            <option value="250">АД 250-Т400</option>
+        </select>
+
+        <input class="modal__order--submit" type="submit" value="Заказать">
+
+    </form>
+
+</div>
+<div id="overlay"></div>
 
 
 
