@@ -1,0 +1,156 @@
+<?php if ( ! defined( 'FW' ) ) {
+    die( 'Forbidden' );
+} ?>
+
+
+<!-- start model.html-->
+<section class="model">
+
+	<div class="container">
+
+		<a name="model" id="go_model"></a>
+
+		<h3 class="model__title">Модельный ряд</h3>
+
+		<table class="model__tg">
+			<tr>
+				<th class="model__tg--title" colspan="4" rowspan="2">ЭЛЕКТРОСТАНЦИИ СТАРТ</th>
+				<th class="model__tg--subtitle" colspan="3">50 HZ / 400V</th>
+			</tr>
+			<tr>
+				<td class="model__tg--name">Номинальная мощность</td>
+				<td class="model__tg--name">Номинальная мощность</td>
+				<td class="model__tg--name">Резервная мощность</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">Модель электростанции</td>
+				<td class="model__tg--name">Модель двигателя</td>
+				<td class="model__tg--name">Модель альтернатора</td>
+				<td class="model__tg--name">Модель панели управления</td>
+				<td class="model__tg--name">кВт</td>
+				<td class="model__tg--name">кВА</td>
+				<td class="model__tg--name">кВА</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 10-Т400</td>
+				<td class="model__tg--name">SDL-16</td>
+				<td class="model__tg--name">SA-10</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">10</td>
+				<td class="model__tg--name">13</td>
+				<td class="model__tg--name">14</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 16-Т400</td>
+				<td class="model__tg--name">SDL-19</td>
+				<td class="model__tg--name">SA-16</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">16</td>
+				<td class="model__tg--name">20</td>
+				<td class="model__tg--name">22</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 20-Т400</td>
+				<td class="model__tg--name">SDL-26</td>
+				<td class="model__tg--name">SA-20</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">20</td>
+				<td class="model__tg--name">25</td>
+				<td class="model__tg--name">27,5</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 24-Т400</td>
+				<td class="model__tg--name">SDL-30</td>
+				<td class="model__tg--name">SA-24</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">24</td>
+				<td class="model__tg--name">30</td>
+				<td class="model__tg--name">33</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 30-Т400</td>
+				<td class="model__tg--name">SDL-34</td>
+				<td class="model__tg--name">SA-30</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">30</td>
+				<td class="model__tg--name">37,5</td>
+				<td class="model__tg--name">42,25</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 40-Т400</td>
+				<td class="model__tg--name">SDK-56</td>
+				<td class="model__tg--name">SA-40</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">40</td>
+				<td class="model__tg--name">50</td>
+				<td class="model__tg--name">55</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 50-Т400</td>
+				<td class="model__tg--name">SDK-66</td>
+				<td class="model__tg--name">SA-50</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">50</td>
+				<td class="model__tg--name">62,5</td>
+				<td class="model__tg--name">68,7</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 60-Т400</td>
+				<td class="model__tg--name">SDK-72</td>
+				<td class="model__tg--name">SA-60</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">60</td>
+				<td class="model__tg--name">75</td>
+				<td class="model__tg--name">82,5</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 80-Т400</td>
+				<td class="model__tg--name">SDK-100</td>
+				<td class="model__tg--name">SA-80</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">80</td>
+				<td class="model__tg--name">100</td>
+				<td class="model__tg--name">110</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 100-Т400</td>
+				<td class="model__tg--name">SDK-110</td>
+				<td class="model__tg--name">SA-100</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">100</td>
+				<td class="model__tg--name">125</td>
+				<td class="model__tg--name">137</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 150-Т400</td>
+				<td class="model__tg--name">SDK-170</td>
+				<td class="model__tg--name">SA-150</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">150</td>
+				<td class="model__tg--name">187</td>
+				<td class="model__tg--name">206</td>
+			</tr>
+			<tr>
+				<td class="model__tg--name">АД 200-Т400</td>
+				<td class="model__tg--name">SDK-230</td>
+				<td class="model__tg--name">SA-200</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">200</td>
+				<td class="model__tg--name">250</td>
+				<td class="model__tg--name">275</td>
+			</tr>
+			<tr class="colored">
+				<td class="model__tg--name">АД 250-Т400</td>
+				<td class="model__tg--name">SDK-308</td>
+				<td class="model__tg--name">SA-250</td>
+				<td class="model__tg--name">DeepSea DSE 6120</td>
+				<td class="model__tg--name">250</td>
+				<td class="model__tg--name">312</td>
+				<td class="model__tg--name">343</td>
+			</tr>
+		</table>
+
+	</div>
+
+</section>
+<!-- end model.html-->
