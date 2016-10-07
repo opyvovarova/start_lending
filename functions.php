@@ -90,6 +90,9 @@ function startlp_scripts() {
 	wp_enqueue_style( 'startlp-style', get_template_directory_uri() . '/css/styles.min.css' );
 
 	wp_enqueue_script( 'startlp-script-jq', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', array(), '', true );
+	wp_enqueue_script( 'startlp-script-mask', get_template_directory_uri() . '/js/jquery.maskedinput.min.js', array(), '', true );
+	wp_enqueue_script( 'startlp-script-validate', 'http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js', array(), '', true );
+	wp_enqueue_script( 'startlp-script-validate-methods', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js', array(), '', true );
 	wp_enqueue_script( 'startlp-script-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), '', true );
 	wp_enqueue_script( 'startlp-script-map', 'https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU', array(), '', true );
 	wp_enqueue_script( 'startlp-script', get_template_directory_uri() . '/js/script.min.js', array(), '', true );
@@ -104,3 +107,37 @@ function startlp_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'startlp_scripts' );
+
+// AJAX ACTION
+add_action( 'wp_ajax_sendcallmodal', 'sendCallForm' );
+add_action( 'wp_ajax_nopriv_sendcallmodal', 'sendCallForm' );
+
+function sendCallForm() {
+	if ( $_POST ) {
+		$adminMail = get_option( 'admin_email' );
+
+		$str = "С вашего сайта оставили заявку на обратный звонок:<br>";
+		$str .= 'Имя: ' . $_POST["name"] . ' <br>';
+		$str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+
+		wp_mail( $adminMail, "Запрос на обратный звонок", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+	}
+	wp_die();
+}
+// AJAX ACTION
+add_action( 'wp_ajax_sendordermodal', 'sendOrderForm' );
+add_action( 'wp_ajax_nopriv_sendordermodal', 'sendOrderForm' );
+
+function sendOrderForm() {
+	if ( $_POST ) {
+		$adminMail = get_option( 'admin_email' );
+
+		$str = "С вашего сайта заказали товар:<br>";
+		$str .= 'Имя: ' . $_POST["name"] . ' <br>';
+		$str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+		$str .= 'Модель: ' . $_POST["model"] . ' <br>';
+
+		wp_mail( $adminMail, "Заказ с сайта", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+	}
+	wp_die();
+}
