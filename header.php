@@ -53,6 +53,7 @@
 			<section class="top-slider">
 				<div class="top-slider__box">
 					<?php $slides = fw_get_db_customizer_option('slides'); ?>
+					<?php $i = 1; ?>
 					<?php if(!empty($slides)): foreach( $slides as $slide ): ?>
 						<div class="top-slider__box--item">
 							<?php if(isset($slide['image']['url'])): ?>
@@ -62,12 +63,13 @@
 								<?php if(isset($slide['span'])): ?>
 									<span class="top-slider__box--uptitle"><?php echo $slide['span']; ?></span>
 								<?php endif; ?>
-								<h1 class="top-slider__box--title"><?php echo $slide['title']; ?></h1>
-								<p class="top-slider__box--subtitle">
+								<h1 class="top-slider__box--title<?php echo ($i >= 3)? '3' :' ' ; ?>"><?php echo $slide['title']; ?></h1>
+								<p class="top-slider__box--subtitle<?php echo ($i >= 3)? '3' :' ' ; ?>">
 									<?php echo $slide['desc']; ?>
 								</p>
 							</div>
 						</div>
+						<?php $i++; ?>
 					<?php endforeach; endif; ?>
 				</div>
 			</section>
