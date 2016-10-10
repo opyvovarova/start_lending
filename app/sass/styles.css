@@ -2663,6 +2663,14 @@ p{
         width: 100%;
         height: 100%;
         object-fit: contain; }
+    .brand__box--container {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 340px;
+      margin-bottom: 30px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
     .brand__box--content {
       display: block;
       position: relative;
