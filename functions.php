@@ -94,12 +94,17 @@ function startlp_scripts() {
 	wp_enqueue_script( 'startlp-script-validate', 'http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js', array(), '', true );
 	wp_enqueue_script( 'startlp-script-validate-methods', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js', array(), '', true );
 	wp_enqueue_script( 'startlp-script-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), '', true );
-	wp_enqueue_script( 'startlp-script-map', 'https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU', array(), '', true );
+	wp_enqueue_script( 'startlp-script-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCeGXrQ1gUQ2RmppWvgmQCpDcG2fn92Gfk&sensor=false', array(), '', true );
 	wp_enqueue_script( 'startlp-script', get_template_directory_uri() . '/js/script.min.js', array(), '', true );
 	wp_enqueue_script( 'startlp-main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 	wp_localize_script('startlp-main', 'myajax',
 		array(
 			'url' => admin_url('admin-ajax.php')
+		)
+	);
+	wp_localize_script('startlp-script', 'directory',
+		array(
+			'url' => get_template_directory_uri()
 		)
 	);
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

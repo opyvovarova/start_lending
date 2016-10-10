@@ -112,20 +112,74 @@ $(document).ready(function () {
     /*close go up arrow*/
 
     /*footer map*/
-    if ($('#footerMap').length > 0) {//проверяет наличие блока на странице
+    if($('#footerMap').length > 0){
+
+        function initialize() {//инициализация кары
+
+            var mapCanvas = document.getElementById('footerMap');//получаем наш div куда будем карту добавлять
+            
+            var styleArray = [// задаем стили карты
+                {
+                    featureType: "all",//для всех элементов
+                    stylers: [
+                        { hue: "#9ec0ed" },//базовый цвет
+                        { saturation: 60 },//изменение интенсивности базового цвета элемента в процентах
+                        { lightness: -20 },//процентное изменение яркости элемента
+                        { gamma: 1 }//гамма
+                    ]
+                },{
+                    featureType: "road.arterial",//для дорог
+                    elementType: "geometry",
+                    stylers: [
+                        { visibility: "on" }//видимость
+                    ]
+                },{
+                    featureType: "poi.business",//для бизнесс-меток
+                    elementType: "labels",
+                    stylers: [
+                        { visibility: "off" }//видимость
+                    ]
+                }
+            ];
+            var mapOptions = {//параметры карты
+                center: new google.maps.LatLng(55.543731, 37.761320), //Это центр куда спозиционируется наша карта при загрузке
+                zoom: 17,//увеличение 0 - 18
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: styleArray //подключаем стили
+            };
+
+            var map = new google.maps.Map(mapCanvas, mapOptions);//Инициализируем карту
+            var dir = directory.url;//абсолютный путь для WP
+            var image = dir + '/img/icons/biglmarker-icon.png';//путь к картирке маркера
+            marker = new google.maps.Marker({//добавляем маркер на карту
+                map: map,   
+                position: {lat: 55.543731, lng: 37.761320},//центр маркера
+                icon: image//тип маркера
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    }
+
+    
+
+
+    /*if ($('#footerMap').length > 0) {//проверяет наличие блока на странице
 
         ymaps.ready(function () {
 
             var myMap = new ymaps.Map('footerMap', {
                 // При инициализации карты, обязательно нужно указать
                 // ее центр и коэффициент масштабирования
-                center: [55.548726, 37.74242],
+                center: [55.543731, 37.761320],
                 zoom: 17
             });
+
+            var dir = directory.url;
             // Создание метки
             var myPlacemark = new ymaps.Placemark(
                 // Координаты метки
-                [55.548726, 37.74242] , {
+                [55.543731, 37.761320] , {
                     // Свойства
                     // Текст метки
                     // iconContent: 'Центр детского творчества'
@@ -133,14 +187,14 @@ $(document).ready(function () {
                     // Опции
                     // Иконка метки будет растягиваться под ее контент
                     // preset: 'twirl#blueStretchyIcon'
-                    iconImageHref: 'img/icons/biglmarker-icon.png', // картинка иконки
+                    iconImageHref: dir+'/img/icons/biglmarker-icon.png', // картинка иконки
                     iconImageSize: [140, 118], // размеры картинки
                     iconImageOffset: [9, -103] // смещение картинки
                 });
             // Добавление метки на карту
             myMap.geoObjects.add(myPlacemark);
         });
-    };
+    };*/
     /*close footer map*/
 
     /*modal*/

@@ -2499,6 +2499,7 @@ p{
       font-family: "Gilroy Light";
       font-size: 36px;
       margin-bottom: -43px;
+      margin-left: 17%;
       /*text-shadow: 1px 1px 3px #000000;*/ }
     .top-slider__box--subtitle {
       display: block;
@@ -3255,6 +3256,7 @@ p{
       height: 100%;
       padding: 0;
       margin: 0;
+      border: none;
       z-index: 1;
       /*&:hover{
         z-index: 2;
@@ -3465,7 +3467,7 @@ p{
     background-position: -9px 0; }
 
   .svc {
-    background-position: 52px 0; }
+    background-position: 52px -25px; }
 
   .services__animation4 {
     position: absolute;
