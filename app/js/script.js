@@ -38,7 +38,7 @@ $(document).ready(function () {
         stagePadding: 0,
         smartSpeed: 450,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         responsive: {
             0: {
                 items: 1
