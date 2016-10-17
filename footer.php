@@ -19,7 +19,7 @@
 
 		<a href="http://yobrand.ru/" class="footer__link--agency" target="_blank">
             <span class="img">
-                <img src="<?php bloginfo('template_directory'); ?>img/icons/art-icon.png">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icons/art-icon.png">
             </span>
 			<span class="text">Разработано <br> Yobrand Agency</span>
 		</a>
