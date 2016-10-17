@@ -2443,8 +2443,7 @@ p{
       .top-slider__box--img img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        margin-left: 30%; }
+        object-fit: contain; }
     .top-slider__box--content {
       display: block;
       position: absolute;
@@ -3239,29 +3238,7 @@ p{
     width: 100%;
     height: 478px;
     float: left;
-    overflow: hidden;
-    /*&--bg{
-      display: block;
-      width: 100%;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      top: 0;
-      left: 0;
-      visibility: visible;
-      background-image: url("../img/map-bg.png");
-      background-repeat: no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover;
-      z-index: 2;
-      transition: height 0.1s ease-in;
-      &:hover{
-        height: 0%;
-        z-index: 1;
-      }
-    }*/ }
+    overflow: hidden; }
     .footer__map #footerMap {
       display: block;
       width: 100%;
@@ -3269,10 +3246,37 @@ p{
       padding: 0;
       margin: 0;
       border: none;
-      z-index: 1;
-      /*&:hover{
-        z-index: 2;
-      }*/ }
+      z-index: 1; }
+  .footer__link {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: #fff; }
+    .footer__link--agency {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 150px;
+      float: right;
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 100px; }
+      .footer__link--agency .img {
+        flex: 1 0 52px;
+        height: 52px;
+        position: relative;
+        overflow: hidden;
+        float: left; }
+      .footer__link--agency .text {
+        flex: 1 0 auto;
+        position: relative;
+        align-self: flex-end;
+        float: left;
+        color: #e98963;
+        font-family: "Gilroy Light";
+        font-size: 11px; }
 
 #Go_Top {
   position: fixed;

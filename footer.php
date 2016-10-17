@@ -13,8 +13,17 @@
 
 <footer class="footer">
 	<div class="footer__map">
-		<div id="footerMap"></div>
-		<!--<div class="footer__map&#45;&#45;bg"></div>-->
+		<div id="footerMap"></div>		
+	</div>
+	<div class="footer__link">
+
+		<a href="http://yobrand.ru/" class="footer__link--agency" target="_blank">
+            <span class="img">
+                <img src="<?php bloginfo('template_directory'); ?>img/icons/art-icon.png">
+            </span>
+			<span class="text">Разработано <br> Yobrand Agency</span>
+		</a>
+
 	</div>
 </footer>
 <a href="#" id='Go_Top'><img alt="up" src="<?php bloginfo('template_directory'); ?>/img/icons/up.png"></a>
