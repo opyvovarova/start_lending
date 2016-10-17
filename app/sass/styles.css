@@ -2433,6 +2433,18 @@ p{
         width: 100%;
         height: 100%;
         object-fit: contain; }
+    .top-slider__box--img {
+      position: relative;
+      width: 70%;
+      height: 688px;
+      float: left;
+      overflow: hidden;
+      margin-left: 30%; }
+      .top-slider__box--img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 30%; }
     .top-slider__box--content {
       display: block;
       position: absolute;

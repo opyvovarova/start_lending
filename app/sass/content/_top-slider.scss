@@ -22,6 +22,19 @@
         object-fit: contain;
       }
     }
+    &--img{
+      position: relative;
+      width: 70%;
+      height: 688px;
+      float: left;
+      overflow: hidden;
+      margin-left: 30%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
     &--content {
       display: block;
       position: absolute;

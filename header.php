@@ -56,6 +56,11 @@
 					<?php $i = 1; ?>
 					<?php if(!empty($slides)): foreach( $slides as $slide ): ?>
 						<div class="top-slider__box--item">
+							<?php if($i == 4): ?>
+							<div class="top-slider__box--img">
+								<img src="<?php echo $slide['image']['url']; ?>" alt="">
+							</div>
+							<?php endif; ?>
 							<?php if(isset($slide['image']['url'])): ?>
 								<img src="<?php echo $slide['image']['url']; ?>" alt="">
 							<?php endif; ?>
