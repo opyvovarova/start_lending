@@ -1,19 +1,5 @@
-$gilroyextrabold: 'Gilroy Extra Bold';
-$gilroylight: 'Gilroy Light';
-
-@font-face {
-  font-family: 'Gilroy Extra Bold';
-  src: url('../fonts/Gilroy/GilroyExtraBold.eot') format('embedded-opentype'),
-  url('../fonts/Gilroy/GilroyExtraBold.woff2') format('woff2'),
-  url('../fonts/Gilroy/GilroyExtraBold.woff') format('woff'),
-  url('../fonts/Gilroy/GilroyExtraBold.ttf') format('truetype'),
-  url('../fonts/Gilroy/GilroyExtraBold.svg') format('svg');
-}
-@font-face {
-  font-family: 'Gilroy Light';
-  src: url('../fonts/Gilroy/GilroyLight.eot') format('embedded-opentype'),
-  url('../fonts/Gilroy/GilroyLight.woff2') format('woff2'),
-  url('../fonts/Gilroy/GilroyLight.woff') format('woff'),
-  url('../fonts/Gilroy/GilroyLight.ttf') format('truetype'),
-  url('../fonts/Gilroy/GilroyLight.svg') format('svg');
-}
+@import "mixins";
++font-face("roboto-regular", "../fonts/RobotoRegular/RobotoRegular")
++font-face("playfairdisplay-bold", "../fonts/PlayfairDisplayBold/PlayfairDisplayBold")
++font-face("playfairdisplay-regular", "../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular")
++font-face("roboto-bold", "../fonts/RobotoBold/RobotoBold")
